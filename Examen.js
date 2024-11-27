@@ -69,8 +69,7 @@ class ProductsViewer extends HTMLElement {
     switch (pagina) {
       case 'index.html':
         return 'https://products-foniuhqsba-uc.a.run.app/TVs';
-      default:
-        return 'Desconocido';
+      
     }
   }
 
@@ -332,6 +331,11 @@ class CustomSearch extends HTMLElement {
 }
 
 customElements.define('custom-search', CustomSearch);
+
+
+
+
+
 
 
 
