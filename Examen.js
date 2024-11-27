@@ -66,12 +66,17 @@ class ProductsViewer extends HTMLElement {
 
   categoria() {
     const pagina = window.location.pathname.split('/').pop();
-    switch (pagina) {
-      case 'index.html':
-        return 'https://products-foniuhqsba-uc.a.run.app/TVs';
-      
-    }
-  }
+
+    
+    const categorias = {
+        'index.html': 'https://products-foniuhqsba-uc.a.run.app/TVs',
+       
+        
+    };
+
+    
+    return categorias[pagina] || null;
+}
 
   async loadArticles() {
     try {
@@ -331,6 +336,10 @@ class CustomSearch extends HTMLElement {
 }
 
 customElements.define('custom-search', CustomSearch);
+
+
+
+
 
 
 
