@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="producto.css">
+  <title>Producto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="bg-gray-900 text-white flex justify-between items-center p-8">
+    <nav class="nav-menu flex items-center justify-center gap-4 md:gap-8 lg:gap-12 text-lg font-semibold text-white" >
+      
+      <div class="popover">
+        <button id="anchor_2" popovertarget="popover_2">Ver caracteristicas</button>
+        <ul id="popover_2" popover>
+          <li id="tags-container"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      
+    </nav>
+  </header>
+  <div class="custom-article-container">
+    <custom-article class="article-del-articulo text-center ">
+      <h3 class="title text-2xl font-bold mb-4 text-blue-600 text-shadow-400 ">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      </h3>
+
+      <div class="price-container bg-gray-200 p-4 rounded-lg shadow">
+        <img src="https://via.placeholder.com/150" alt="Producto" class="imagen">
+        <ul class="space-y-4">
+          <li class="flex items-center">
+            
+            <div>
+              <span class="price-label text-xl font-bold mr-2">Precio:</span>
+              <span class="price font-sans text-gray-900">1900 $</span>
+            </div>
+          </li>
+          <li class="flex items-center">
+            <span class="descripcion-label text-xl font-bold mr-2">Descripcion:</span>
+            <span class="description font-sans text-gray-900">Lorem ipsum dolor sit amet</span>
+          </li>
+          <li class="flex items-center">
+            <span class="features-label text-xl font-bold mr-2">Features:</span>
+            <span class="features font-sans text-gray-900">Lorem ipsum dolor sit amet</span>
+          </li>
+        </ul>
+        
+      </div>
+
+      
+
+      <hr>
+    </custom-article>
+  </div>
+
+  <div class="button-container">
+    <button class="back-button" onclick="location.href='index.html'">
+      Volver al inicio
+    </button>
+  </div>
+  
+  <script src="Examen.js"></script>
+
+</body>
+</html>
