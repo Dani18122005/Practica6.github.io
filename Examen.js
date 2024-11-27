@@ -64,23 +64,12 @@ class ProductsViewer extends HTMLElement {
     this.loadArticles();
   }
 
-  categoria() {
-    const pagina = window.location.pathname.split('/').pop();
-
-    
-    const categorias = {
-        return: 'https://products-foniuhqsba-uc.a.run.app/TVs',
-       
-        
-    };
-
-    
-   
-}
+ 
+  
 
   async loadArticles() {
     try {
-      const url = this.categoria();
+      const url = `https://products-foniuhqsba-uc.a.run.app/TVs`;
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error('Error al obtener los artículos');
@@ -336,19 +325,6 @@ class CustomSearch extends HTMLElement {
 }
 
 customElements.define('custom-search', CustomSearch);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
