@@ -69,13 +69,13 @@ class ProductsViewer extends HTMLElement {
 
     
     const categorias = {
-        'index.html': 'https://products-foniuhqsba-uc.a.run.app/TVs',
+        return: 'https://products-foniuhqsba-uc.a.run.app/TVs',
        
         
     };
 
     
-    return categorias[pagina] || null;
+   
 }
 
   async loadArticles() {
@@ -336,6 +336,10 @@ class CustomSearch extends HTMLElement {
 }
 
 customElements.define('custom-search', CustomSearch);
+
+
+
+
 
 
 
